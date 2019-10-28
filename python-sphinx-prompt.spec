@@ -7,7 +7,7 @@ Summary:	Sphinx directive to add unselectable prompt
 Summary(pl.UTF-8):	Dyrektywa Sphinksa do dodawania pytań bez możliwości wyboru
 Name:		python-sphinx-prompt
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/sphinx-prompt/
