@@ -6,13 +6,14 @@
 Summary:	Sphinx directive to add unselectable prompt
 Summary(pl.UTF-8):	Dyrektywa Sphinksa do dodawania pytań bez możliwości wyboru
 Name:		python-sphinx-prompt
-Version:	1.1.0
-Release:	2
+# keep 1.4.x here for python2 support
+Version:	1.4.0
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/sphinx-prompt/
 Source0:	https://files.pythonhosted.org/packages/source/s/sphinx-prompt/sphinx-prompt-%{version}.tar.gz
-# Source0-md5:	b7cf0ee98a7951f9c3a0e3e4b5e4ae61
+# Source0-md5:	4b217991abf068ce9e22cf10393faf56
 URL:		http://github.com/sbrunner/sphinx-prompt
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
@@ -77,7 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with python2}
 %files
 %defattr(644,root,root,755)
-%doc README.rst
+%doc LICENSE README.rst
 %{py_sitescriptdir}/sphinx-prompt
 %{py_sitescriptdir}/sphinx_prompt-%{version}-py*.egg-info
 %endif
@@ -85,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with python3}
 %files -n python3-sphinx-prompt
 %defattr(644,root,root,755)
-%doc README.rst
+%doc LICENSE README.rst
 %{py3_sitescriptdir}/sphinx-prompt
 %{py3_sitescriptdir}/sphinx_prompt-%{version}-py*.egg-info
 %endif
